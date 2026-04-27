@@ -24,7 +24,8 @@ This approach improves scalability, maintainability, and fault isolation compare
 ## Current Status
 
 * Location Service: Completed
-* Other Services (User, Flight, Booking, Pricing, etc.): In Progress
+* User Service: Completed
+* Other Services (Flight, Booking, Pricing, etc.): In Progress
 
 ---
 
@@ -179,6 +180,25 @@ The Location Service follows a layered architecture:
 
 ###  Get Airport
 ![Get Airport](screenshot/getairports.png)
+
+### User APIs
+
+* POST /auth/signup
+  Register User
+  ![Register User](screenshot/usersignup.png)
+
+* POST /auth/login
+  Login User
+  ![Login User](screenshot/userlogin.png)
+  
+* GET /api/users
+  Get All Users
+  ![Get ALL Users](screenshot/usergetallusers.png)
+
+* GET api/users/{id}
+  Get user by id
+  ![Get User By ID](screenshot/usergetuserbyid.png)
+ 
 
 ## Tech Stack
 
